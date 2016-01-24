@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.subham.ledgerplus" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_calculator_grey600_36dp"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.subham.ledgerplus.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MenuLedger"
+            android:label="Ledger Plus"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AddUser"
+            android:label="Add an account"
+            android:noHistory="true"
+            android:parentActivityName=".MenuLedger"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.subham.ledgerplus.MenuLedger" />
+        </activity>
+        <activity
+            android:name=".AddRecord"
+            android:label="Add an entry"
+            android:noHistory="true"
+            android:parentActivityName=".MenuLedger"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.subham.ledgerplus.MenuLedger" />
+        </activity>
+        <activity
+            android:name=".RemoveUser"
+            android:label="Remove an account"
+            android:noHistory="true"
+            android:parentActivityName=".MenuLedger"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.subham.ledgerplus.MenuLedger" />
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:label="Chnage your password"
+            android:noHistory="true"
+            android:parentActivityName=".MenuLedger"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.subham.ledgerplus.MenuLedger" />
+        </activity>
+        <activity
+            android:name=".ViewLedger"
+            android:label="View Ledger"
+            android:parentActivityName=".MenuLedger"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.subham.ledgerplus.MenuLedger" />
+        </activity>
+        <activity
+            android:name=".EditRecord"
+            android:label="@string/title_activity_edit_record"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BackupActivity"
+            android:label="@string/title_activity_backup"
+            android:parentActivityName=".MenuLedger" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.subham.ledgerplus.MenuLedger" />
+        </activity>
+    </application>
+
+</manifest>
