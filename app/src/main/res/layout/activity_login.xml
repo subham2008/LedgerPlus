@@ -17,76 +17,79 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <LinearLayout
-            android:orientation="vertical"
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/card_layout_login"
+        android:id="@+id/linearLayoutLogin"
+        android:gravity="center"
+        android:padding="35dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/card_layout_login"
-            android:id="@+id/linearLayoutLogin"
-            android:gravity="center"
-            android:padding="35dp">
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Enter your secret number"
+            android:id="@+id/textViewLogin"
+            android:textColor="@color/primary_dark"
+            android:textSize="16dp"
+            android:layout_gravity="left" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/resultLogin"
+            android:layout_marginTop="10dp"
+            android:textColor="#e50000"
+            android:textSize="12sp"
+            android:layout_gravity="left" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Enter your secret number"
-                android:id="@+id/textViewLogin"
-                android:textColor="@color/primary_dark"
-                android:textSize="16dp"
-                android:layout_gravity="left" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/userLogin"
+            android:layout_marginTop="10dp"
+            android:hint="Enter username"
+            android:textColor="@color/primary"
+            android:text="admin"
+            android:enabled="false"
+            android:editable="false"
+            android:visibility="gone" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/resultLogin"
-                android:layout_marginTop="10dp"
-                android:textColor="#e50000"
-                android:textSize="16dp"
-                android:layout_gravity="left" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/passLogin"
+            android:textColor="@color/primary"
+            android:hint="Enter password"
+            android:inputType="numberPassword" />
 
-            <EditText
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/userLogin"
-                android:layout_marginTop="10dp"
-                android:hint="Enter username"
-                android:textColor="@color/primary"
-                android:text="admin"
-                android:enabled="false"
-                android:editable="false"
-                android:visibility="gone" />
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/ic_arrow_right_white_36dp"
+            android:background="@drawable/button_selector"
+            android:id="@+id/enterLogin"
+            android:textColor="#fff" />
 
-            <EditText
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:id="@+id/passLogin"
-                android:textColor="@color/primary"
-                android:hint="Enter password"
-                android:inputType="numberPassword" />
-
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="Continue"
-                android:layout_marginTop="20dp"
-                android:drawableRight="@drawable/ic_arrow_right_white_36dp"
-                android:background="@drawable/button_selector"
-                android:id="@+id/enterLogin"
-                android:textColor="#fff" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Default secret number: 1234"
-                android:id="@+id/textView7"
-                android:layout_gravity="left"
-                android:layout_marginTop="10dp" />
-        </LinearLayout>
-    </ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Default secret number: 1234"
+            android:id="@+id/textView7"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
 </RelativeLayout>
